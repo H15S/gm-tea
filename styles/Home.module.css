@@ -1,0 +1,85 @@
+.container {
+    height: 100vh;
+    background: linear-gradient(135deg, #34186b, #5c2f91);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    font-family: 'Arial Black', sans-serif;
+  }
+  
+  .content {
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    background: linear-gradient(to right, #facc15, #f97316);
+    color: black;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #fde68a, #fdba74);
+  }
+  
+  .counter {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .caption {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .steam {
+    position: absolute;
+    font-size: 80px;
+    opacity: 0.1;
+    animation: floatUp 8s infinite;
+  }
+  
+  .one {
+    top: 60%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  .two {
+    top: 70%;
+    left: 70%;
+    animation-delay: 2s;
+  }
+  .cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    opacity: 0.15;
+    z-index: 1;
+  }
+  
+  @keyframes floatUp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+  }
+  
